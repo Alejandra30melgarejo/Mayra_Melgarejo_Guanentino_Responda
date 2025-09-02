@@ -1,0 +1,135 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fondo general */
+  body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #ffe4ec; /* Rosa pastel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    background: #fff;
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.2s;
+  }
+  
+  .container:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Títulos */
+  h1 {
+    color: #e91e63;
+    margin-bottom: 10px;
+    font-size: 26px;
+  }
+  
+  h3 {
+    margin-bottom: 20px;
+    color: #555;
+    font-weight: normal;
+  }
+  
+  /* Botones */
+  .botones a {
+    text-decoration: none;
+  }
+  
+  button {
+    background: #ff80ab;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin-top: 10px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  button:hover {
+    background: #d81b60;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  /* Formularios */
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+  }
+  
+  .formulario label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .formulario input {
+    padding: 12px;
+    border: 2px solid #ffc1e3;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  .formulario input:focus {
+    border-color: #e91e63;
+    outline: none;
+    box-shadow: 0 0 6px rgba(233, 30, 99, 0.3);
+  }
+  
+  /* Mensajes (errores o confirmación) */
+  .mensaje {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .mensaje.error {
+    background: #ffe0e6;
+    color: #d81b60;
+    border: 1px solid #f48fb1;
+  }
+  
+  .mensaje.ok {
+    background: #e0f7ec;
+    color: #2e7d32;
+    border: 1px solid #81c784;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 500px) {
+    .container {
+      padding: 25px;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  

@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login Digitador</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Asegúrate que la ruta sea correcta -->
 </head>
 <body>
-    <center>
-        <h1>Iniciar sesión para digitadores</h1>
-        <form action="loguearse_digitador.php" method="POST">
-            <label for="">Ingrese su correo electrónico:</label>
-            <br><br>
-            <input type="text" name="email" id="" required>
-            <br><br>
-            <label for="">Ingrese su contraseña:</label>
-            <br><br>
-            <input type="text" name="contraseña" id="" required>
-            <br><br>
+    <div class="container">
+        <h1>Iniciar sesión</h1>
+        <h3>Digitadores</h3>
+        <form class="formulario" action="loguearse_digitador.php" method="POST">
+            
+            <label for="email">Ingrese su correo electrónico:</label>
+            <input type="email" name="email" id="email" required>
+            
+            <label for="contraseña">Ingrese su contraseña:</label>
+            <input type="password" name="contraseña" id="contraseña" required>
+            
             <button type="submit">Ingresar</button>
         </form>
-    </center>
+    </div>
 </body>
 </html>
